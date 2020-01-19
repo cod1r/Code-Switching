@@ -39,13 +39,14 @@
                 <div class="page-content">
 
                     <div class="jumbotron">
-                        <h4>Workshop Dates</h4>
+                        <h4>Workshop Dates and Locations</h4>
                         <hr class="custom-line">
                         <ul>
                             {%for date in site.dates %}
                             <li>{{ date.name }}: {{ date.date }}</li>
                             {% endfor %}
                             <li>Main Event: <a href="{{ site.Links }}"><strong>{{ site.Links }}</strong></a></li>
+                            <li>Venue: {{ site.Venue }}</li>
                         </ul>
                         <i class="bold" style="text-align: right !important;">*All deadlines are at 23:59 GMT -08:00</i>
                     </div>

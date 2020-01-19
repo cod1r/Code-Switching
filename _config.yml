@@ -3,9 +3,9 @@ description: Code Switching Workshop
 details: Collocated with LREC 2020
 github:
   owner_name: Jason
-  wi_url: /workshopinformation/wi.html
-  oc_url: /organizingcommittee/oc.html
-  pc_url: /programcommittee/pc.html
+  wi_url: wi.html
+  oc_url: oc.html
+  pc_url: pc.html
 dates:
   - name: Workshop date
     date: Saturday May 16th, 2020

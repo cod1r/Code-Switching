@@ -46,7 +46,7 @@ title: Organizing Committee
 
 ## Amitava Das
 
-![Amitava Das Picture](/images/ad.PNG)
+![Amitava Das Picture](/images/ad.png)
 - Lead Scientist
 - Wipro AI Lab India
 - [amitava.das2@wipro.com](mailto:amitava.das2@wipro.com "Email")

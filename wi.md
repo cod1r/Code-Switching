@@ -35,7 +35,7 @@ The reviewing process will not be blind and papers can include the authors' name
 
 **Multiple Submission Policy**
 
-Papers that have been or will be submitted to other meetings or publications are acceptable, but authors must indicate this information at submission time. If accepted, authors must notify the organizers as to whether the paper will be presented at the workshop or elsewhere.
+Papers that have been or will be submitted to other meetings or publications are acceptable, but authors must indicate this information at submission time. If accepted, authors must notify the organizers before the camera-ready deadline as to whether the paper will be presented at the workshop or elsewhere.
 
 **Electronic Submission**
 

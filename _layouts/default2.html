@@ -16,10 +16,10 @@
             <div class="nav-wrapper">
                 <nav>
                     <ul>
-                        <li><a href="http://localhost:4000/">Home</a></li>
-                        <li><a href="/workshopinformation/wi.html">Paper Submissions/Workshop Information</a></li>
-                        <li><a href="/programcommittee/pc.html">Committee</a></li>
-                        <li><a href="/organizingcommittee/oc.html">Organizers</a></li>
+                        <li><a href="{{ '/' | absolute_url }}">Home</a></li>
+                        <li><a href="{{ site.github.wi_url | relative_url}}">Paper Submissions/Workshop Information</a></li>
+                        <li><a href="{{ site.github.pc_url | relative_url}}">Committee</a></li>
+                        <li><a href="{{ site.github.oc_url | relative_url}}">Organizers</a></li>
                         <li class="twitter"><a href="https://twitter.com/WCALCS" class="fa fa-twitter"></a></li>
                     </ul>
                 </nav>
@@ -28,11 +28,11 @@
             <div class="image-container">
                 <img src="https://www.france-voyage.com/visuals/photos/marseille-2072_w600.jpg" alt="Marseille, France">
                 <div class="page-title bottom-right">
-                    <h6>Collocated with LREC 2020</h6>
+                    <h6>{{ site.details }}</h6>
                 </div>
             </div>
             <div class="image-caption">
-                <i>The 4th Workshop will be Collocated with LREC 2020 on <strong class="bold"></strong>. Marseille, France</i>
+                <i>The 4th Workshop will be {{ site.details }} on <strong class="bold">{{ site.dates.name[0].date }}</strong>. Marseille, France</i>
             </div>
             <div class="container">
 
@@ -42,29 +42,13 @@
                         <h4>Workshop Dates</h4>
                         <hr class="custom-line">
                         <ul>
-                            
-                            <li>Workshop date: Saturday May 16th, 2020</li>
-                            
-                            <li>Paper submission: February 17th, 2020</li>
-                            
-                            <li>Notification of acceptance: March 9th, 2020</li>
-                            
-                            <li>Camera ready submission deadline: April 2nd, 2020</li>
-                            
+                            {%for date in site.dates %}
+                            <li>{{ date.name }}: {{ date.date }}</li>
+                            {% endfor %}
                         </ul>
                         <i class="bold" style="text-align: right !important;">*All deadlines are at 23:59 GMT -08:00</i>
                     </div>
-                    <h1 id="what-is-code-switching">What is Code Switching?</h1>
-
-<ul>
-  <li>Code-switching (CS) is the phenomenon by which multilingual speakers switch back and forth between their common languages in written or spoken communication.</li>
-  <li>CS is typically present on the intersentential, intrasentential (mixing of words from multiple languages in the same utterance) and even morphological (mixing of morphemes) levels.</li>
-  <li>CS presents serious challenges for language technologies such as Parsing, Machine Translation (MT), Automatic Speech Recognition (ASR), information retrieval (IR) and extraction (IE), and semantic processing.</li>
-  <li>Traditional techniques trained for one language quickly break down when there is input mixed in from another language.</li>
-  <li>Even for problems that are considered solved for specific domains and languages, such as language identification, or part of speech tagging, performance degrades at a rate proportional to the amount and level of the mixed-language present.</li>
-</ul>
-
-
+                    {{ content }}
 
                         <p>
                             Updates will be given through the workshop <strong class="bold">Google group:</strong>

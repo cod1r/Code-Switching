@@ -1,6 +1,9 @@
 ---
 layout: default2
 title: Workshop Information
+InvitedSpeakers:
+  - name: Alan W. Black
+    college: Carnegie Mellon University
 ---
 
 # Workshop Information
@@ -46,3 +49,10 @@ Papers should be submitted electronically at [https://www.softconf.com/lrec2020/
 This year we propose a theme for the workshop around resources and evaluation metrics and frameworks. The goal of the theme is to disseminate more broadly the data sets that are available for the research community, and to engage the community in a discussion about adopting best practices and common frameworks to enable a comprehensive evaluation of technology for code-switched data. We welcome submissions responsive to the theme, in addition to the topics listed above.
 
 
+# Invited Speakers
+
+{%for speaker in page.InvitedSpeakers %}
+
+{{ speaker.name }} - College: {{ speaker.college }}
+
+{% endfor %}

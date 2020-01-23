@@ -10,7 +10,7 @@ title: Program Committee
 - Özlem Cetinoglu, University of Stuttgart
 - Hila Gonen, Bar Ilan University
 - Sandipan Dandapat, Microsoft 
-- A. Seza Doğruöz, Google Research
+- A. Seza Doğruöz, Independent Researcher
 - William H. Hsu, Kansas State University
 - Constantine Lingos, Brandeis University
 - Rupesh Mehta, Microsoft 
